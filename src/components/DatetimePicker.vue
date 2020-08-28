@@ -7,7 +7,6 @@
         :loading="loading"
         :label="label"
         :value="formattedDatetime"
-        :error-messages="errorMessages"
         v-on="on"
         readonly
       >
@@ -117,9 +116,6 @@ export default {
     },
     timePickerProps: {
       type: Object
-    },
-    errorMessages: {
-      type: Array
     }
   },
   data() {
